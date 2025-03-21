@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.page-break {
+    page-break-after: always;
+}
+
+.bateau-image {
+    max-width: 150px; 
+    max-height: 100px; 
+    margin-bottom: 20px;
+}

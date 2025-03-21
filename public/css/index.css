@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('../sicile/vue.png') center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgba(197, 10, 10, 0.25);
+
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Fixe le flou pour qu'il ne bouge pas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); /* Flou plus léger */
+    z-index: -1;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(196, 196, 196, 0.43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.site-title {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.navbar a {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family:'Gudea';
+}
+
+.navbar a:hover {
+    background: #17325b;
+}
+
+
+.page-title {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    font-size: 80px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.card {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin: 40px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer h3 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    font-family: 'Gudea';
+    font-weight: 400;
+
+}
+
+.delete-btn {
+    background: #F32727;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c9302c;
+}
+
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background: #17325b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-family:'Arial';
+}
+
+.footer-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
