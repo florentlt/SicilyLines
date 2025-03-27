@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #DDB892;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(196, 196, 196, 0.43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar a {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: 'Gudea';
+}
+
+.navbar a:hover {
+    background: #17325b;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.page-title {
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: black;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: 1px solid rgba(75, 75, 75, 0.2);
+    padding: 20px; /* Réduit le padding */
+    border-radius: 10px;
+    width: 40vw; /* Utilise 40% de la largeur de l'écran */
+    max-width: 1000px; /* Réduit la largeur max */
+    text-align: left;
+    margin: 10px auto; /* Réduit la marge */
+    margin-top:50px;
+}
+
+.label-form {
+    display: block;
+    margin-bottom: 5px; /* Réduit la marge */
+    margin-top: 5px; /* Réduit la marge */
+    font-family: 'Gudea', sans-serif;
+    font-weight: 600;
+    font-size: 14px; /* Réduit la taille de police */
+    text-align: left;
+    color: #000000;
+}
+
+form label {
+    font-family: 'Gudea', sans-serif;
+    font-weight: 400;
+    font-size: 14px; /* Réduit la taille de police */
+}
+
+/* Réduction des paddings et marges pour les champs de texte et de fichiers */
+form input[type="text"],
+form input[type="file"] {
+    width: 100%;
+    padding: 8px 10px; /* Réduit le padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Gudea', sans-serif;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(23, 50, 91, 0.3);
+}
+
+/* Style pour le bouton */
+form button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Réduit le padding */
+    border-radius: 5px;
+    font-family: 'Gudea', sans-serif;
+    font-size: 14px; /* Réduit la taille de police */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0f2041;
+}
+
+/* Réduction des marges pour les éléments de formulaire */
+form div:has(input[type="checkbox"]) {
+    margin-top: 5px; /* Réduit la marge */
+    display: block;
+    gap: 5px; /* Réduit l'écart entre les éléments */
+    text-align: left;
+}
+
+form div:has(input[type="checkbox"]) label {
+    display: inline-block;
+    margin-bottom: 5px; /* Réduit la marge */
+    text-align: left;
+}
+
+form div > div {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 3px; /* Réduit la marge */
+    font-family: 'Gudea', sans-serif;
+    text-align: left;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background: #17325b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-family:'Arial';
+}
+
+.footer-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
