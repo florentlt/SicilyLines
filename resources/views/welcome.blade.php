@@ -21,7 +21,7 @@
             @if (Route::has('login'))
               <div>
                 @auth
-                  <a href="{{ url('/ferry') }}" class="">Accès page</a>
+                  <a href="{{ url('/ferry') }}" class="">Voir les bateaux</a>
                   <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit" class="">Se déconnecter</button>

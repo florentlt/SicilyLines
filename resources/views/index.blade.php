@@ -15,7 +15,7 @@
     <header class="navbar">
         <div class="nav-left">
             <img src="../sicile/logo.png" alt="Logo" class="logo">
-            <a href="{{ route('ferry.create') }}" style="margin-right: 10px;">Ajouter un ferry</a>
+            <a href="{{ route('ferry.create') }}" style="margin-right: 10px;">Ajouter un bateau</a>
             <a href="{{ route('pdf') }}">Générer le PDF</a>
         </div>
         <div class="nav-right">
@@ -33,7 +33,7 @@
                     <form action="{{ route('ferry.destroy', $ferry->id) }}" method="POST" class="d-inline">
                         @csrf
                         @method('DELETE')
-                        <button  class="delete-btn" type="submit">Supprimer</button>
+                        <button class="delete-btn" type="submit" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce bateau ?')">Supprimer</button>
                     </form>
                 </div>
             </div>
